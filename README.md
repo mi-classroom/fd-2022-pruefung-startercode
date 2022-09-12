@@ -71,7 +71,7 @@ Die Bewertung erfolgt entlang der folgenden Niveaustufen
 - die **Must Features** sind vollständig umgesetzt und funktionieren
 - die Änderungen für die Features sind in der Commit Historie ersichtlich und verständlich erklärt
 - alle Features sind gepusht
-- ein Zusatz-Feature ist implementiert und funktioniert
+- ein Zusatz-Features im Umfang von mindestens **3 Storypoints** sind implementiert und funktionieren
 - der erzeugte Code zeigt, dass der Verfasser\*In ein sehr gutes Verständnis der zugrunde liegenden Technologien und Konzepte hat 
 - die Änderungen wurden im Sinne der Projektstruktur in den passenden Dateien gemacht
 - der erzeugte Code ist nachvollziehbar, selbsterklärend und effizient (semantisches HTML, Nutzung von SCSS & Custom Properties, robustes Javascript)
