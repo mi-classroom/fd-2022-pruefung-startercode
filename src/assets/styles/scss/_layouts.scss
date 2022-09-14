@@ -1,0 +1,66 @@
+/* Grid Container
+############################################################################ */
+
+.grid-container {
+  display: grid;
+  gap: $m;
+  grid-template-columns: repeat(auto-fill, minmax($card-width, 1fr));
+  transition: all 0.5s;
+
+  &[data-view-mode="list-view"] {
+    grid-template-columns: 1fr;
+
+    li > a {
+      display: block;
+    }
+  }
+
+  &[data-view-mode="small-card-view"] {
+    grid-template-columns: repeat(auto-fill, minmax($small-card-width, 1fr));
+  }
+}
+
+.grid-container-zweispalter {
+  display: grid;
+  gap: $m;
+  grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: $vp-medium) {
+  .grid-container-zweispalter {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Page
+############################################################################ */
+
+.page-block {
+  max-width: $vp-xlarge;
+  padding-right: var(--space-right-left);
+  padding-left: var(--space-right-left);
+  margin: 0 auto;
+}
+
+/* Backgrounds
+############################################################################ */
+
+.bg-darker {
+  padding-top: $l;
+  padding-bottom: $xl;
+  margin-top: $xl;
+  background-color: $darken;
+}
+
+/* Text container
+############################################################################ */
+
+.text-container {
+  & > * {
+    max-width: $max-textblock-width;
+  }
+
+  & + section {
+    padding-top: $xl;
+  }
+}

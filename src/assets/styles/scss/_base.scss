@@ -1,0 +1,94 @@
+html,
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: $font-sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body[data-mode="light"] {
+  --bg-color: #{$lightest};
+  --interaction-color: #{$accent-dark};
+  --text-color: #{$darker};
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.wrap {
+  display: flex;
+  min-height: 100vh;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & > * {
+    width: 100%;
+  }
+}
+
+main {
+  flex-grow: 2;
+  padding-bottom: $xl;
+}
+
+a {
+  color: var(--interaction-color);
+  text-decoration: none;
+}
+
+dt {
+  font-weight: $fw-bold;
+}
+
+/* Tables
+############################################################################ */
+
+table {
+  thead {
+    border-bottom: solid $border-width-m $lighten;
+    font-weight: $fw-bold;
+    text-align: left;
+
+    th {
+      padding: $xs;
+    }
+  }
+
+  tbody {
+    tr:nth-child(odd) { background: $darken; }
+
+    td,
+    th {
+      padding: $xs;
+    }
+
+    th {
+      color: $light;
+      text-align: left;
+    }
+  }
+}
+
+/* Figure
+############################################################################ */
+
+figure {
+  margin-bottom: $l;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  figcaption {
+    max-width: 40ch;
+    color: $light;
+  }
+}

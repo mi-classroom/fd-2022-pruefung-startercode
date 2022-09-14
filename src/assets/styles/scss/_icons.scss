@@ -1,0 +1,65 @@
+.icon {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  direction: ltr;
+  font-family: $font-icons;
+  font-feature-settings: "liga";
+  font-size: $m;  /* Preferred icon size */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: inherit;
+  text-rendering: optimizelegibility;
+  text-transform: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: normal;
+
+  &.i12::before { font-size: 12px !important; }
+  &.i14::before { font-size: 14px !important; }
+  &.i18::before { font-size: 18px !important; }
+  &.i24::before { font-size: 24px !important; }
+  &.i36::before { font-size: 36px !important; }
+  &.i48::before { font-size: 48px !important; }
+  &::before { content: attr(data-icon); }
+}
+
+button.btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+  opacity: 0.5;
+  transition: all $tr-fast;
+
+  & > * {
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: var(--interaction-color);
+    cursor: pointer;
+    opacity: 1;
+  }
+
+  &.is-active {
+    opacity: 1;
+  }
+}
+
+.icon-arrow-down {
+  width: 26px;
+  height: 26px;
+  background-image: url("../assets/images/sharp-keyboard_arrow_down-24px.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.is-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

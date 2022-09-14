@@ -1,0 +1,113 @@
+$dark:   hsl(0deg 0% 40%);
+$darker:  hsl(0deg 0% 20%);
+$darkest:  hsl(0deg 0% 0%);
+$darken: rgb(0 0 0 / 25%);
+$light:   hsl(0deg 0% 60%);
+$lighter:   hsl(0deg 0% 80%);
+$lightest: hsl(0deg 0% 100%);
+$lighten: rgb(255 255 255 / 25%);
+$accent:  #fc0;
+$accent-dark:  rgb(188 122 0);
+$error:   #c00;
+
+/* Viewports
+----------------------------------------------------------------------------- */
+$vp-medium: 720px;
+$vp-large: 1024px;
+$vp-xlarge: 1400px;
+
+/* Größen und Abstände
+----------------------------------------------------------------------------- */
+
+$bfs: 1rem;
+$multiply: 0.008;
+
+/* Entlang der Renard10 Reihe
+  100, 125, 160, 200, 250, 315 */
+
+$xxs: $bfs * $multiply * 50;
+$xs: $bfs * $multiply * 100;
+$s: $bfs * $multiply * 125;
+$m: $bfs * $multiply * 160;
+$l: $bfs * $multiply * 200;
+$xl: $bfs * $multiply * 250;
+$xxl: $bfs * $multiply * 315;
+
+/* Schriftarten
+----------------------------------------------------------------------------- */
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto-light;
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto-light"), url("fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto-regular;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto-regular"), url("fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Roboto-bold;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto-bold"), url("fonts/Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: MaterialIcons;
+  font-style: normal;
+  font-weight: 400;
+  src:
+    url("fonts/MaterialIcons/MaterialIconsSharp-Regular.otf") format("opentype"),
+    url("fonts/MaterialIcons/MaterialIcons-Regular.ttf") format("truetype");
+}
+
+$font-sans-serif: "Roboto-light";
+$font-sans-serif-bold: "Roboto-bold";
+$font-icons: "MaterialIcons";
+
+/* Line Height
+----------------------------------------------------------------------------- */
+$lh-normal: 130%;
+$lh-loose: 150%;
+
+/* Font Weight
+----------------------------------------------------------------------------- */
+$fw-light: 100;
+$fw-medium: 400;
+$fw-bold: 700;
+
+/* Misc
+----------------------------------------------------------------------------- */
+
+$border-radius: $xs;
+$border-radius-s: calc($xs / 4);
+$border-width-s: 1px;
+$border-width-m: 2px;
+$small-card-width: min(100%, 30rem); // Aufgabe
+$card-width: min(100%, 15rem); // Aufgabe
+$tr-fast: 0.1s; // Transition
+$box-shadow: 0 0 5px rgb(0 0 0 / 40%);
+$max-textblock-width: 60ch;
+
+/* Mappings
+----------------------------------------------------------------------------- */
+:root {
+  --bg-color: #{$darker};
+  --text-color: #{$lighter};
+  --text-color-minor: #{$light};
+  --interaction-color: #{$accent};
+  --bg-color-card: #222;
+  --bg-color-form: #{$dark};
+  --space-top: clamp(1em, 1em + 2vw, 5em);
+  --space-right-left: clamp(1em, 1em + 2vw, 5em);
+  --border-color: #{$lighten};
+}
