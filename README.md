@@ -55,9 +55,11 @@ Bringen Sie bitte Ihren eigenen Rechner mit. Sollte das nicht möglich sein, kö
 
 Wenn Sie an der Prüfung Remote teilnehmen, sind Sie für eine angemessene Internetverbindung verantwortlich. Sie brauchen außerdem ein Kamerabild von Ihnen während der ganzen Prüfungdauer.
 
+```
 https://th-koeln.zoom.us/j/6078076173?pwd=TjZXb1BoRUxYTktNQnVmZTducVhBQT09
 Meeting-ID: 607 807 6173
 Kenncode: noss
+
 
 ### Eigenständigkeitserklärung
 
